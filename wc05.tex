@@ -21,7 +21,7 @@
 \printanswers
 
 \title{Weekly Challenge 05: Predicate Logic and Natural Language\\CS/MATH 113 Discrete Mathematics}
-\author{team-name}  % <== for grading, replace with your team name, e.g. q1-team-420
+\author{q2-team-39}  % <== for grading, replace with your team name, e.g. q1-team-420
 \date{Habib University | Spring 2023}
 
 \qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
@@ -43,15 +43,16 @@
   \begin{parts}
   \item Express in English language, the definiton of the limit of a function at a point.
     \begin{solution}
-      % Enter your solution here.
+      Forall $\epsilon$ greater than zero, thereexists $\delta$ greater than zero such that if $|x − a|$ lies between zero and $\delta$. then $|f(x) − L|$ is less than $\epsilon$
     \end{solution}
   \item Express in English language, what it means for the limit of a function $f(x)$ to not exist at point $x=a$.
     \begin{solution}
-      % Enter your solution here.
+      Forall 
+      $\epsilon$ greater than zero, thereexists $\delta$ greater than zero such that if $|x − a|$ lies between zero and $\delta$. then $|f(x) − L|$ is less than $\delta$
     \end{solution}
   \item Express in predicate logic, what it means for the limit of a function $f(x)$ to not exist at point $x=a$.
     \begin{solution}
-      % Enter your solution here.
+      \exists \epsilon>0 \ni \forall \delta>0,((0<|x - a|< \delta) \land \neg(|f(x) - L|<\epsilon))
     \end{solution}
   \item If in the defintion of limit we swap the two quantifiers like this:
     \[
@@ -59,7 +60,7 @@
     \]
     How does the new statement read? Does it still define the limit of a function? Discuss.
     \begin{solution}
-      % Enter your solution here.
+      Thereexists $\delta$ greater than zero such that forall $\epsilon$ greater than zero , if $|x - a|$ lies between zero and $\delta$ then $|f(x)-L|$ is less than $\epsilon$. No, because it says that one value of $\delta$ would work for all $\epsilon$ and before it said that for each $\epsilon$ , thereexists a different value of $\delta$
     \end{solution}
   \end{parts}
 \end{questions}
